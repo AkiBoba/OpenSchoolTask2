@@ -1,3 +1,0 @@
-FROM openjdk:17-alpine
-ADD metricsConsumer/target/metricsConsumer-0.0.1-SNAPSHOT.jar consummer.jar
-ENTRYPOINT ["java", "-jar", "consummer.jar"]

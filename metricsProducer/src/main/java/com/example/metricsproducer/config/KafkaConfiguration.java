@@ -11,7 +11,7 @@ import java.time.Duration;
 @Configuration
 public class KafkaConfiguration {
 
-//    @Bean
+    @Bean
     public NewTopic metricsTopic() {
         return TopicBuilder.name("metrics-topic")
                 .partitions(3)

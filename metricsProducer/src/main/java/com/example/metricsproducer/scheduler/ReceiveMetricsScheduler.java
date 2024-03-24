@@ -36,8 +36,6 @@ public class ReceiveMetricsScheduler {
      */
     @Scheduled(fixedDelay = 5000)
     public void loadMetrics() {
-        log.info("Начинаем загрузку новых метрик приложения");
         urlList.forEach(service::getMetrics);
-        log.info("Загрузка метрик завершена");
     }
 }
